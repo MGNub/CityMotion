@@ -111,7 +111,7 @@ body {
     position : sticky;
     background : var(--bgColor);
     top : 0;
-    padding-top: 10vh;
+    padding-top: 5vh;
     padding-bottom: 3vh;
     font-size : 16vh;
     margin-left : 3rem;
@@ -468,20 +468,21 @@ body {
     width : 100vw;
     display : flex;
     align-items : center
+}
+    
 #page4 h1 {
-    font-size : 150rem;
-    text-align : right;
-    margin : 0;
-    font-size : 10rem;
-    animation : textPopIn 1.5s ease-in-out;
+    margin-top: 80px;
+    margin-left: 300px;
+    font-size : 11rem;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
-    font-style: italic;    
-}t;
+    font-style: italic;   
 }
 
-/*page5*/
+/* 
+
+/*p */
 
 #page5 {
     position : relative;
@@ -503,7 +504,20 @@ body {
     font-size : 2.5rem;
     width : 65vw;
     text-align : center;
-    text-shadow : 3px 3px 5px black, -3px -3px 5px black;
+    /* text-shadow : 3px 3px 5px black, -3px -3px 5px black; */
+}
+
+#page5 .transitText h2 {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#page5 .transitText p {
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .textHidden {
