@@ -1,4 +1,4 @@
-// window.scrollTo(0, 0);
+window.scrollTo(0, 0);
 setTimeout(showVideo, 850);
 setTimeout(letScroll, 2000);
 
@@ -61,7 +61,6 @@ function parallax() {
         bikeHorizontal.style.marginLeft = (window.innerHeight * 6.4) + (-1 * window.pageYOffset);
     } else if (window.scrollY > window.innerHeight * 4.6) {
         document.getElementById('page2').style.background = 'rgb(117, 156, 212)'; //rgb(153, 185, 231)
-        document.getElementById('page2Text').style.color = 'white';
     } 
     // else if (window.scrollY > window.innerHeight * 3.2) {
     //     trafficImg.style.left = -1 * window.pageYOffset - window.innerHeight * 3.2;
