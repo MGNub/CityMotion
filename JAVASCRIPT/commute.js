@@ -33,7 +33,7 @@ function parallax() {
         logo.classList.remove('rotate');
     }
 
-    if (window.scrollY > window.innerHeight * 7.4 + window.innerWidth * 4) {
+    if (window.scrollY > window.innerHeight * 6.9 + window.innerWidth * 4) {
         bikeVideo.style.display = 'none';
         transitVideo.style.display = 'block';
     } else if(window.scrollY > window.innerHeight) {
