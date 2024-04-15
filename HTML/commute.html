@@ -1,16 +1,16 @@
-    <html lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CityMotion</title>
-    <link rel="stylesheet" href="https://mgnub.github.io/CityMotion/CSS/menu.css">
-    <link rel="stylesheet" href="https://mgnub.github.io/CityMotion/CSS/commute.css">
-    <link rel="icon" href="https://mgnub.github.io/CityMotion/IMAGES/logo.png">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="CSS/commute.css">
+    <link rel="icon" href="mgnub.github.io/CityMotion/IMAGES/logo.png">
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://rawgit.com/nathco/jQuery.scrollSpeed/master/jQuery.scrollSpeed.js"></script> -->
 </head>
 <body>
-    <img src="https://mgnub.github.io/CityMotion/ICONS/arrowUp.png" alt="">
+    <img src="/ICONS/arrowUp.png" alt="">
     <div id = 'intro'>
         <div></div>
         <div></div>
@@ -19,8 +19,8 @@
     <div id = 'menuBackground'></div>
     <div id = 'menu'>
         <div id = 'menuBar'>
-            <a id = 'title' href = 'https://mgnub.github.io/CityMotion/index.html'>
-                <img id = 'logo' src="https://mgnub.github.io/CityMotion/IMAGES/logo.png" alt="">
+            <a id = 'title' href = '/index.html'>
+                <img id = 'logo' src="/IMAGES/logo.png" alt="">
                 <div>
                     <h1 id = 'titleText'>CityMotion</h1>
                 </div>
@@ -29,7 +29,7 @@
         </div>
         <div id = 'menuBtn' class = 'reveal'>CityMotion</div>
         <div id = 'menuBtn2' class = ''>
-            <a href = 'https://mgnub.github.io/CityMotion/index.html'>Home</a>
+            <a href = '/index.html'>Home</a>
             <a href = 'road.html'>Road Infrastructure</a>
             <a class = 'active'>Difficulties of Commuting</a>
             <a href = 'cities.html'>Cities Around the World</a>
@@ -40,13 +40,13 @@
     <div id = 'topPage'>
         <div id = 'header'><h1>COMMUTING</h1></div>
         <video id = 'topVideo' muted autoplay loop>
-            <source src = 'https://github.com/MGNub/CityMotion/raw/main/VIDEOS/roadsBG.mp4'>
+            <source src = '/VIDEOS/roadsBG.mp4'>
         </video>
         <video id = 'bikeVideo' muted autoplay loop>
-            <source src = 'https://github.com/MGNub/CityMotion/raw/main/VIDEOS/bikes.mp4'>
+            <source src = '/VIDEOS/bikes.mp4'>
         </video>
         <video id = 'transitVideo' muted autoplay loop>
-            <source src = 'https://github.com/MGNub/CityMotion/raw/main/VIDEOS/publicTransit.mp4'>
+            <source src = '/VIDEOS/publicTransit.mp4'>
         </video>
         <div id = 'overlay'></div>
     </div>
@@ -65,18 +65,38 @@
         <div id = 'page2'>
             <h2>Thoughts from Philadelphians</h2>
             <div class = 'row'>
-                <div class = 'card'>
-                    <p>“They come pretty often, lots of buses. It’s annoying when there’s detours and delays though. At least there are public buses to take, even though there are delays. Sometimes they come 30+ minutes late. Actually, if you think about it, the buses just got canceled, so it wasn’t late at all. So I went at 4, the 4:10 bus got canceled, the 4:20 bus got canceled, but the 4:30 bus came on time, so technically it was right on time.”</p>
-                    <p>- Mikey Huang</p>
+                <div class = 'cardContainer'>
+                    <div class = 'card'>MIKEY</div>
                 </div>
-                <div class = 'card'>
-                    <p>“I hate the smell of weed on the subway. I like the fact that you can use your phone to get on trains, even though it makes it feels like Big Brother is watching my every move.”</p>
-                    <p>- Erik Wiessmann</p>
+                <div class = 'cardContainer'>
+                    <div class = 'card1'>ERIK WIESSMANN</div>
                 </div>
-            </div>
-            <div class = 'row'>
-                <div class = 'card'></div>
-                <div class = 'card'></div>
+                <!-- <div class = 'content'>
+                    <p class="description"></p>
+                    <a class="card" href="#!">
+                    <div class="front" style="background-image:url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2022/AA_Blog.png)">
+                        <p> Mikey Huang </p>
+                    </div>
+                    <div class="back">
+                        <div>
+                        <p>“They come pretty often, lots of buses. It’s annoying when there’s detours and delays though. At least there are public buses to take, even though there are delays. Sometimes they come 30+ minutes late. Actually, if you think about it, the buses just got canceled, so it wasn’t late at all. So I went at 4, the 4:10 bus got canceled, the 4:20 bus got canceled, but the 4:30 bus came on time, so technically it was right on time.”</p>
+                        </div>
+                    </div> 
+                    </a>
+                </div>
+                <div class = 'content'>
+                    <p class="description"></p>
+                    <a class="card" href="#!">
+                    <div class="front" style="background-image:url(https://www.nami.org/NAMI/media/NAMI-Media/BlogImageArchive/2022/AA_Blog.png)">
+                        <p> Erik Wiessmann </p>
+                    </div>
+                    <div class="back">
+                        <div>
+                        <p>“I hate the smell of weed on the subway. I like the fact that you can use your phone to get on trains, even though it makes it feels like Big Brother is watching my every move.”</p>
+                        </div>
+                    </div> 
+                    </a>
+                </div> -->
             </div>
             <!-- <div id = 'page2Slide'>
                 <h1 id = 'page2Text'>BLACK TEXT</h1>
@@ -146,11 +166,11 @@
                     <a href = "cities.html"><button onclick = 'btnClicked()'>Learn</button></a>
                 </div>
             </div>
-            <img src="https://mgnub.github.io/CityMotion/ICONS/projectAltF4.png" alt="">
+            <img src="/ICONS/projectAltF4.png" alt="">
         </footer>
     </div>
-<script src = 'https://mgnub.github.io/CityMotion/JAVASCRIPT/menu.js'></script>
-<script src = 'https://mgnub.github.io/CityMotion/JAVASCRIPT/commute.js'></script>
+<script src = '../JAVASCRIPT/menu.js'></script>
+<script src = '../JAVASCRIPT/commute.js'></script>
 <script>
 </script>
 </body>
