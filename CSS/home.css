@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 body {
     background : rgba(24, 47, 80, 0.774);
     color : white;
@@ -5,7 +7,7 @@ body {
     display : flex;
     flex-direction : column;
     overflow-x : hidden;
-    overflow-y : hidden;
+    /* overflow-y : hidden; */
 }
 
 /*MENU*/
@@ -72,11 +74,23 @@ body {
 #introBox {
     width : 500px;
     text-align : center;
-    background : radial-gradient(rgba(0, 0, 0, 0.8), transparent 70%);
+    background : radial-gradient(rgb(39, 71, 110), transparent 70%);
 }
 
 #introBox h2 {
-    font-size : 3em;
+    font-size : 3.5em;
+    font-family: "Josefin Sans", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: 700;
+    font-style: normal;
+}
+
+#introBox p {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
 }
 
 #introBox button {
@@ -84,8 +98,10 @@ body {
     color : white;
     padding : 15px 50px;
     border : solid white 2px;
-    font-weight : bold;
     margin-top : 15px;
+    font-family: "Spectral", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 #introBox button:hover {
@@ -103,7 +119,7 @@ body {
 }
 
 #page2 {
-    background : linear-gradient(180deg, black 60%, var(--bgColor));
+    background : linear-gradient(180deg, black 60%, var(--primaryDark));
 }
 
 /*page3*/
@@ -111,7 +127,7 @@ body {
 #page3 {
     position : sticky;
     top : 0;
-    background : var(--bgColor);
+    background : var(--primaryDark);
     height : 100vh;
     width : 100vw;
     display : flex;
@@ -128,8 +144,8 @@ body {
 }
 
 #page3 #card1 {
-    background : radial-gradient(rgb(93, 93, 93), rgb(29, 29, 29));
-    height : 400px;
+    background : radial-gradient(rgb(110, 160, 210), rgb(39, 71, 110));
+    height : 300px;
     width : 500px;
     transform : translateX(-35%) rotateY(-1deg);
     border-radius : 50px;
@@ -140,8 +156,13 @@ body {
     margin : 30px;
     font-size : 1.2rem;
     text-align : center;
+    /* margin-top: 90px; */
     padding-bottom : 1rem;
     border-bottom : solid 1px white;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 #page3 #card2 {
@@ -153,16 +174,30 @@ body {
     border-radius : 50px;
     opacity : 0;
     background-size : 100%;
+    transition : height 0.2s ease-in-out, width 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#page3 #card2:hover {
+    height : 320px;
+    width : 520px;
+    box-shadow : -5px 5px 10px black;
+}
+
+#page3 #card2:hover::before {
+    background-position : 80%;
 }
 
 #page3 #card2::before {
     content : '';
     position : absolute;
-    background : radial-gradient(rgba(93, 93, 93, 0.3) 30%, rgb(18, 18, 18));
-    height : 300px;
-    width : 500px;
+    background : radial-gradient(rgba(93, 93, 93, 0), rgb(18, 18, 18) 90%);
+    height : 100%;
+    width : 100%;
     border-radius : 50px;
+    transition : all 0.4s ease-in-out;
+    background-size : 200%;
 }
+
 
 #page3 #text2 {
     position : absolute;
@@ -170,13 +205,18 @@ body {
     font-size : 1.2rem;
     transform : rotateY(-2deg);
     opacity : 0;
+    text-shadow : 3px 3px 2px black;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 
 /*page4*/
 
 #page4 {
-    background : var(--bgColor);
+    background : var(--primaryDark);
     z-index : 10;
 }
 
