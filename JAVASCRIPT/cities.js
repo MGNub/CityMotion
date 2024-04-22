@@ -2,6 +2,8 @@ const earth = document.getElementById('earth');
 const earthFill = document.getElementById('earthFill');
 const earthGlobe = document.getElementById('globe');
 
+let counter = 0;
+
 earth.addEventListener('mouseover', earthAnimateIn);
 earth.addEventListener('mouseout', earthAnimateOut)
 
@@ -52,6 +54,8 @@ function introExpand() {
 
 function toggleMap() {
     hideCity();
+    document.getElementById('footer').style.top = '100vh';
+    scrollTo(0, 0);
     if (mapState) {
         hideMap();
     } else if (cityShown) {
@@ -94,13 +98,21 @@ for (let i = 0; i < 6; i++) {
 
     function callCity() {
         showCity(i);
+        document.getElementById('footer').style.top = '200vh';
         cityShown = true;
     }
 }
 
 function showCity(x) {
+    if (counter > 0) {
+        prevBtn.style.color = 'white';
+        prev.classList.remove('cityDisplay');
+    }
+    counter = 0;
     cities[x].style.transform = 'translateX(0)';
     console.log(x);
+    let cityString = ['#dakar', '#tokyo', '#brisbane', '#amsterdam', '#buenosAires', '#philadelphia'];
+    changeText(0, cityString[x]);
 }
 
 function hideCity() {
@@ -109,5 +121,54 @@ function hideCity() {
     }
 }
 
+//CITIES CONTENT
+
+let index2;
+let prev;
+let prevBtn;
+
+
+function changeText(index, city) {
+    const cityTexts = document.querySelectorAll(city + ' .cityText');
+    const cityBG = document.querySelectorAll(city + ' .cityBG');
+    const cityBtns = document.querySelectorAll(city + ' .tab');
+    // const cityContent = document.querySelector(city + '.cityContent');
+    if (counter === 0) {
+        prev = cityTexts[0];
+        prevBtn = cityBtns[0];
+        prevBtn.style.color = 'var(--primaryDark)';
+        console.log(prevBtn);
+    } else {
+        if (index2 === index) {
+            return;
+        }
+        prevBtn.style.color = 'white';
+        prev.classList.remove('cityDisplay');
+    }
+    if (index2 === index) {
+        return;
+    }
+    cityTexts[index].classList.add('cityDisplay');
+    cityBG[index].classList.add('cityDisplay');
+    cityBtns[index].style.color = 'var(--primaryDark)';
+
+    prev = cityTexts[index];
+    prevBtn = cityBtns[index];
+    index2 = index;
+
+    counter++;
+}
+
 
 console.log(continents);
+
+window.addEventListener('scroll', parallax);
+
+function btnClicked(btnState) {
+    const btn = document.querySelector('#btn button');
+    // if(btnState) {
+    //     btn.style.background = 'rgb(180, 180, 180)';
+    // } else {
+    //     style.background = 'transparent';
+    // }
+}
