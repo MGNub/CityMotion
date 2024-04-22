@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CityMotion</title>
-    <link rel="stylesheet" href="https://mgnub.github.io/CityMotion/CSS/menu.css">
-    <link rel="stylesheet" href="https://mgnub.github.io/CityMotion/CSS/contribute.css">
-    <link rel="icon" href="https://mgnub.github.io/CityMotion/IMAGES/logo.png">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/contribute.css">
+    <link rel="icon" href="../IMAGES/logo.png">
 </head>
 <body>
     <div id = 'intro'>
@@ -20,8 +20,8 @@
     <div id = 'menuBackground'></div>
     <div id = 'menu'>
         <div id = 'menuBar'>
-            <a id = 'title' href = 'https://mgnub.github.io/CityMotion/index.html'>
-                <img id = 'logo' src="https://mgnub.github.io/CityMotion/IMAGES/logo.png" alt="">
+            <a id = 'title' href = '../index.html'>
+                <img id = 'logo' src="../IMAGES/logo.png" alt="">
                 <div>
                     <h1 id = 'titleText'>CityMotion</h1>
                 </div>
@@ -30,7 +30,7 @@
         </div>
         <div id = 'menuBtn' class = 'reveal'>CityMotion</div>
         <div id = 'menuBtn2' class = ''>
-            <a href = 'https://mgnub.github.io/CityMotion/index.html'>Home</a>
+            <a href = '../index.html'>Home</a>
             <a href = 'road.html'>Road Infrastructure</a>
             <a href = 'commute.html'>Difficulties of Commuting</a>
             <a href = 'cities.html'>Cities Around the World</a>
@@ -46,20 +46,61 @@
         </div>
         <div class = 'page'>
             <div class = 'text'>
-                <p class = 'hidden'>There are several actions any average citizen can take in order to contribute to improving one's city.</p>
+                <h2 class = 'hidden'>There are several actions any average citizen can take in order to contribute to improving one's city.</h2>
                 <div class = 'hidden'>
-                    <li>Vote for politicians/city mayors that support better urban planning.</li>
+                    <p> <li>Vote for politicians/city mayors that support better urban planning.</li>
                     <li>Show up to city council meetings; they are accessible to the public.</li>
                     <li>Form a coalition or alliance group in your neighborhood or community.</li>
-                    <li>Promote advocacy for better roads among peers and in your community.</li>
+                    <li>Promote advocacy for better roads among peers and in your community.</li> </p>
                 </div>
             </div>
         </div>
         <div class = 'page'>
-            <img src="https://www.enddd.org/wp-content/uploads/2021/12/traffic-safety_445910746-scaled.jpg" alt="">
-            <div class = 'text'>
-                <h2>Directing Federal Road Funds into Your Community</h2>
-                <p>Before seeking funding, it's important for communities to have a clear vision for what they want to achieve in terms of walkability, safety, and equitable transportation. This vision will guide the prioritization of projects and funding allocation.</p>
+            <div class = 'innerPage'>
+                <img src="https://www.enddd.org/wp-content/uploads/2021/12/traffic-safety_445910746-scaled.jpg" alt="">
+                <div class = 'text'>
+                    <h2>Directing Federal Road Funds into Your Community</h2>
+                    <p>Before seeking funding, it's important for communities to have a clear vision for what they want to achieve in terms of walkability, safety, and equitable transportation. This vision will guide the prioritization of projects and funding allocation.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class = 'page'>
+            <div id = 'funds'>
+                <div id = 'fundsNav'>
+                    <span class = 'tab' onclick = 'funds(0)'><p>Have a Vision</p></span>
+                    <span class = 'tab' onclick = 'funds(1)'><p>Engage with State and Local Officials</p></span>
+                    <span class = 'tab' onclick = 'funds(2)'><p>Understanding Funding Streams</p></span>
+                    <span class = 'tab' onclick = "funds(3)"><p>Coalition Building</p></span>
+                    <span class = 'tab' onclick = 'funds(4)'><p>Policy Change</p></span>
+                    <span class = 'tab' onclick = 'funds(5)'><p>Utilize Resources</p></span>
+                </div>
+                <div id = 'fundsContent'>
+                    <div class = 'fundsText fundsDisplay'>
+                        <h2>LZOXCOZOCXZIXZ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, excepturi ratione reprehenderit, vero dignissimos ate</p>
+                    </div>
+                    <div class = 'fundsText'>
+                        <h2>LZOXCOZOCXZIXZ</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, excepturi ratione reprehenderit, vero dignissimos ate</p>
+                    </div>
+                    <div class = 'fundsText'>
+                        <h2>HEDASDING</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, excepturi ratione reprehenderit, vero dignissimos adipisci, dolor asperiores laborum quae omnis cupiditate blanditiis animi et odio aliquam sunt architecto repellendus voluptate</p>
+                    </div>
+                    <div class = 'fundsText'>
+                        <h2>HPCVOX</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, excepturi ratione reprehenderit, vero dignissimos adipisci, dolor asperiores laborum quae omnis cupiditate blanditiis animi et odio aliquam sunt architecto repellendus voluptate</p>
+                    </div>
+                    <div class = 'fundsText'>
+                        <h2>HEASADSAXZCDING</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, excepturi ratione reprehenderit, vero dignissimos adipisci, dolor asperiores laborum quae omnis cupiditate blanditiis animi et odio aliquam sunt architecto repellendus voluptate</p>
+                    </div>
+                    <div class = 'fundsText'>
+                        <h2>HEADqewQWEWQING</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, excepturi ratione reprehenderit, vero dignissimos adipisci, dolor asperiores laborum quae omnis cupiditate blanditiis animi et odio aliquam sunt architecto repellendus voluptate</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class = 'page'>
@@ -81,14 +122,14 @@
                 </div>
                 <div id = 'btn'>
                     <h1>Take a stand.</h1>
-                    <a href = "https://mgnub.github.io/CityMotion/index.html"><button onclick = 'btnClicked()'>Home</button></a>
+                    <a href = "../index.html"><button onclick = 'btnClicked()'>Home</button></a>
                 </div>
             </div>
-            <img src="https://mgnub.github.io/CityMotion/ICONS/projectAltF4.png" alt="">
+            <img src="../ICONS/projectAltF4.png" alt="">
         </footer>
     </div>
 
-<script src = 'https://mgnub.github.io/CityMotion/JAVASCRIPT/menu.js'></script>
-<script src = 'https://mgnub.github.io/CityMotion/JAVASCRIPT/contribute.js'></script>
+<script src = '../JAVASCRIPT/menu.js'></script>
+<script src = '../JAVASCRIPT/contribute.js'></script>
 </body>
 </html>
