@@ -65,7 +65,7 @@ function parallax() {
         pageOneText.style.top = -0.33 * window.pageYOffset + pageHeight / 2;
         pageOneText.style.opacity = 1 - window.pageYOffset / 500;
 
-        pages.style.top = -1 * window.pageYOffset;
+        // pages.style.top = -1 * window.pageYOffset;
         if (window.scrollY > pageHeight * 14.4) {
             imageText.style.marginLeft = pageHeight * -3.7 + window.innerWidth / 2;
         } else if (window.scrollY > pageHeight * 10.7) {
@@ -146,7 +146,6 @@ parallax();
 //text reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log("entry")
     if(entry.isIntersecting) {
       entry.target.classList.add('show');
     } else {
