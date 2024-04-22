@@ -329,17 +329,3 @@ body {
 
     }
 }
-
-/*background*/
-
-/* #background {
-    background : url('/homeImages/fogCity.jpg');
-    position : absolute;
-    top : 0;
-    left :0vw;
-    width : 100vw;
-    height : 400vh;
-    background-size : 100%;
-    background-blend-mode : overlay;
-    background-color : rgba(0, 0, 0, 0);
-} */
