@@ -2,12 +2,7 @@ window.scrollTo(0, 0);
 setTimeout(showVideo, 850);
 setTimeout(letScroll, 2000);
 
-// $(function() {
-//        jQuery.scrollSpeed(100, 20, 'ease-in');
-// });
-
 const topVideo = document.getElementById('topVideo');
-// let theme = document.documentElement.style.getPropertyValue('--bgColor');
 
 function showVideo() {
     topVideo.style.opacity = '1';
