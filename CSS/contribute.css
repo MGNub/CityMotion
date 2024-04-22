@@ -1,7 +1,4 @@
-:root {
-    --primaryDark : rgb(39, 71, 110);
-    --primaryLight : rgb(110, 160, 210);
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
     background : black;
@@ -11,6 +8,14 @@ body {
 .titleShow {
     transform : translateX(0) translateY(0) !important;
     opacity : 1 !important;
+}
+
+.page #contributeTitle {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 70px;
 }
 
 .hidden {
@@ -99,10 +104,24 @@ body {
 
 #pages p {
     font-size : 1.8rem;
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#pages li {
+    font-size : 1.25rem;
+    font-family: "Spectral", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 #pages h2 {
     font-size : 2.1rem;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 
 
@@ -129,6 +148,7 @@ body {
     transition : all 0.8s ease-in-out;
 }
 
+
 /*page2*/
 
 #bgImage {
@@ -146,10 +166,20 @@ body {
 
 .page:nth-child(2) {
     background : transparent;
+    height : 150vh;
 }
 
 .page:nth-child(2) .text {
     width : 50vw;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+}
+
+.page:nth-child(2) .text h2 {
+    margin : 0;
+    width : 60vw;
 }
 
 .page:nth-child(2) .text p {
@@ -158,11 +188,26 @@ body {
 }
 
 .page:nth-child(2) .text li {
-    margin : 3rem 5rem 2rem;
+    margin : 2rem 5rem 2rem;
     font-size : 1.25rem;
+    width : fit-content;
 }
 
 /*page3*/
+
+.page:nth-child(3) {
+    height : 100vh;
+    flex-direction : column;
+}
+
+.innerPage {
+    height : 100vh;
+    width : 100vw;
+    display : flex;
+    align-items : center;
+    gap : 3rem;
+    justify-content : center;
+}
 
 .page:nth-child(3) img {
     width : 40vw;
@@ -175,28 +220,124 @@ body {
 /*page4*/
 
 .page:nth-child(4) {
+    background : var(--primaryLight);
+}
+
+/* .innerPage:nth-child(2) {
+    height : 150vh;
+    width : 100vw;
+    background : var(--primaryDark);
+} */
+
+#funds {
+    display : flex;
+    background : ;
+    width : 80vw;
+    height : 80vh;
+    gap : 0;
+}
+
+#funds #fundsNav {
+    background : ;
+    height : 100%;
+    flex : 2;
+    display : flex;
+    flex-direction : column;
+    /* align-items : center; */
+    justify-content : center;
+    
+    background : var(--primaryLight);
+}
+
+#fundsNav span {
+    padding : 10px 0px;
+    margin : auto 20px;
+    font-size : 5rem;
+    border-bottom : solid 1px;
+    display : flex;
+    align-items : center;
+    cursor : pointer;
+    /* text-align : center; */
+}
+
+#fundsNav span p {
+    width : fit-content;
+    margin : 0;
+    font-size : 1.8rem;
+    transition : all 0.3s ease-in-out;
+    font-weight : bold;
+}
+
+#fundsNav span:hover p {
+    color : var(--primaryDark);
+    transform : translateY(-8px);
+    transition-duration : 0.5s;
+
+}
+
+#funds #fundsContent {
+    position : relative;
+    background : rgb(0, 0, 0, 0.3);
+    height : 100%;
+    flex : 5;
+    border-left : 2px solid white;
+}
+
+#fundsContent .fundsText {
+    position : absolute;
+    width : 90%;
+    margin : 2rem 2rem;
+    opacity : 0;
+    transform : translateY(30%);
+    transition : opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fundsDisplay {
+    opacity : 1 !important;
+    transform : translateY(0) !important;
+}
+
+.fundsText:nth-child(1) {
+    display : block;
+}
+
+#fundsContent h2 {
+    font-size : 1.5rem;
+}
+
+#fundsContent p {
+    font-size : 1.2rem;
+}
+
+/*page4*/
+
+.page:nth-child(5) {
     background : var(--primaryDark);
 }
 
-.page:nth-child(4) img {
+.page:nth-child(5) img {
     width : 40vw;
 }
 
-.page:nth-child(4) .text {
+.page:nth-child(5) .text {
     width : 45vw;
 }
 
-/*page5*/
+/*page6*/
 
-.page:nth-child(5) {
+.page:nth-child(6) {
     background : transparent;
 }
 
-.page:nth-child(5) p {
+.page:nth-child(6) p {
     width : 60vw;
     font-size : 2rem !important;
     text-align : center;
     line-height : 100px;
+}
+
+footer h1 {
+    
 }
 
 /*animations*/
