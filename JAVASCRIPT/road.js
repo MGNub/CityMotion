@@ -29,8 +29,6 @@ for(let i = 0; i < text.length; i++) {
     }
 }
 
-numberAnimate
-
 function numberLoad() {
     let numbers = '1234567890';
     const deathTotal = document.querySelector('#page1 #pageText1 h2');
