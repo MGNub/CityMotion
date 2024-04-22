@@ -261,11 +261,11 @@ footer #container {
 footer #overview {
     flex : 1;
     border-right : 1px solid white;
-    padding : 2rem 0;
+    padding : 2rem 2rem 2rem 0;
 }
 
 footer #overview p {
-    width : 80%;
+    width : 90%;
     font-size : 1.3rem;
 }
 
