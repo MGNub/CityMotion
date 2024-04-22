@@ -3,23 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CityMotion</title>
-    <link rel="stylesheet" href="https://mgnub.github.io/CityMotion/CSS/menu.css">
-    <link rel="stylesheet" href="https://mgnub.github.io/CityMotion/CSS/road.css">
-    <link rel="icon" href="https://mgnub.github.io/CityMotion/IMAGES/logo.png">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/road.css">
+    <link rel="icon" href="../IMAGES/logo.png">
 </head>
 <body>
-    <div id = 'intro'>
+    <!-- <div id = 'intro'>
         <h2>
             <p class = 'introP'>Road designs in America are often dangerous and leads to more accidents and traffic congestion. </p>
         </h2>
         <p id = 'clickPrompt'>-click anywhere to continue-</p>
-    </div>
+    </div> -->
 
     <div id = 'menuBackground'></div>
     <div id = 'menu'>
         <div id = 'menuBar'>
-            <a id = 'title' href = 'https://mgnub.github.io/CityMotion/index.html'>
-                <img id = 'logo' src="https://mgnub.github.io/CityMotion/IMAGES/logo.png" alt="">
+            <a id = 'title' href = '../index.html'>
+                <img id = 'logo' src="../IMAGES/logo.png" draggable = "false" alt="">
                 <div>
                     <h1 id = 'titleText'>CityMotion</h1>
                 </div>
@@ -28,7 +28,7 @@
         </div>
         <div id = 'menuBtn' class = 'reveal'>CityMotion</div>
         <div id = 'menuBtn2' class = ''>
-            <a href = 'https://mgnub.github.io/CityMotion/index.html'>Home</a>
+            <a href = '../index.html'>Home</a>
             <a class = 'active'>Road Infrastructure</a>
             <a href = 'commute.html'>Difficulties of Commuting</a>
             <a href = 'cities.html'>Cities Around the World</a>
@@ -38,7 +38,7 @@
 
     <div id = 'pages'>
         <div id = 'page1' class = 'page'>
-            <div id = 'pageText1'><p>More than</p><h2 data-value = '40,000+'>000000</h2> people in the US die from car accidents every year.</div>
+            <!-- <div id = 'pageText1'><p>More than</p><h2 data-value = '40,000+'>000000</h2> people in the US die from car accidents every year.</div> -->
         </div>
         <div id = 'page2'>
             <div id = 'page2Stick' class = 'page'>
@@ -66,33 +66,68 @@
         </div>
         <div id = 'page4' class = 'page'>
             <h1>SUMMARY</h1>
-            <div id = 'pros' class = 'page'>
-                <div id = 'left'>
-                    <img src="https://mgnub.github.io/CityMotion/IMAGES/roadLogo.png" alt="">
-                    <h2>FACILITATES MOVEMENT</h2>
-                    <p>Roads and streets provide pathways for vehicles, pedestrians, cyclists, and other modes of transportation to move from one location to another.  Well-maintained road infrastructure ensures timely access to critical services during emergencies.</p>
+            <div id = 'row'>
+                <div class = 'card'>
+                    <img src="../IMAGES/roadLogo.png" draggable = "false" alt="">
+                    <div class = 'cardText'>
+                        <h2>Facilitates Movement</h2>
+                        <p>Roads and streets provide pathways for vehicles, pedestrians, cyclists, and other modes of transportation to move from one location to another.  Well-maintained road infrastructure ensures timely access to critical services during emergencies.</p>
+                    </div>
                 </div>
-                <div id = 'middle'>
-                    <img src="https://mgnub.github.io/CityMotion/IMAGES/logo.png" alt="">
-                    <h2>SAFETY & ACCESSIBILITY</h2>
-                    <p>Well-designed roads and streets prioritize safety for all users, including pedestrians, cyclists, motorists, and public transportation passengers.</p>
+
+                <div class = 'card'>
+                    <img src="../IMAGES/logo.png" draggable = "false" alt="">
+                    <div class = 'cardText'>
+                        <h2>Safety & Accessibility</h2>
+                        <p>Well-designed roads and streets prioritize safety for all users, including pedestrians, cyclists, motorists, and public transportation passengers.</p>
+                    </div>
                 </div>
-                <div id = 'right'>
-                    <img src="https://mgnub.github.io/CityMotion/IMAGES/dollarSign.png" alt="">
-                    <h2>URBAN DEVELOPMENT</h2>
-                    <p>Street designs influence development of neighborhoods, commercial districts, and public spaces. Roads connecting cities and regions promote economic growth, trade, and tourism, contributing to regional growth and prosperity. </p>
+
+                <div class = 'card'>
+                    <img src="../IMAGES/dollarSign.png" draggable = "false" alt="">
+                    <div class = 'cardText'>
+                        <h2>Urban Development</h2>
+                        <p>Street designs influence development of neighborhoods, commercial districts, and public spaces. Roads connecting cities and regions promote economic growth, trade, and tourism, contributing to regional growth and prosperity.</p>
+                    </div>
                 </div>
             </div>
             <div class = 'curve'></div>
         </div>
+        <div id = 'fadeLines'></div>
         <div id = 'page5' class = 'page'>
             <div id = 'stroad1'>
-                <h1>STROADS</h1>
+                <h1><p id = 'imageText'>STROADS</p></h1>
                 <!--p>While streets and roads together make up a coherent infrastructure, here's where stroads come into play. A stroad is a term for a hybrid of a street and a road.</p-->
-                <iframe src="https://www.youtube.com/embed/OZ1HhLq-Huo?si=bMM2pWcWPSOiXjjT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <iframe src="https://www.youtube.com/embed/OZ1HhLq-Huo?si=bMM2pWcWPSOiXjjT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
             </div>
         </div>
-        <div id = 'stickyExpander'></div>
+        <div id = 'page6' class = 'page'>
+            <div class = 'parallaxText'>
+                <img class = 'hidden' src="https://www.exascaleproject.org/wp-content/uploads/2019/10/NationalSecurityThumb-aspect-ratio-1x1.jpg" alt="">
+                <p class = 'hidden'>While streets and roads together make up a coherent infrastructure, here's where stroads come into the mix.</p>
+            </div>
+            <div class = 'parallaxText'>
+                <h2 class = 'hidden'>What is a Stroad?</h2>
+                <p class = 'hidden'>“A stroad is a term for a hybrid of a street and a road, but it fails at fulfilling the roles of both.”</p>
+            </div>
+            <div class = 'parallaxText'>
+                <img class = 'hidden' src="https://www.planetizen.com/files/images/20929017266_29f77aa3e9_z.jpg" alt="">
+                <p class = 'hidden'>Stroads are expensive to build and maintain, they slow down traffic for drivers, and are hostile towards pedestrians.</p>
+            </div>
+            <div class = 'parallaxText'>
+                <img src="https://preview.redd.it/whats-the-only-thing-worse-than-a-stroad-a-strighway-this-v0-u9zszgf91y1b1.jpg?width=640&crop=smart&auto=webp&s=e23697794f6c8ee24e82f051c39146a9218352ba" alt="">
+                <p class = 'hidden'>Overall, stroads are wide multi-laned thoroughfares with residential or commercial buildings alongside it. The problem is that they're harmful to the city, they're harmful to the people, and they're everywhere.</p>
+            </div>
+        </div>
+        <div id = 'page7' class = 'page'>
+            <!-- <div class = 'parallaxShape hidden'></div>
+            <div class = 'parallaxShape hidden'></div> -->
+            <div id = 'greenFade'>
+                
+            </div>
+        </div>
+        <div id = 'page8' class = 'page'></div>
+        <div id = 'page9' class = 'page'></div>
         <footer>
             <div id = 'container'>
                 <div id = 'overview'>
@@ -104,10 +139,10 @@
                     <a href = "commute.html"><button onclick = 'btnClicked()'>Learn</button></a>
                 </div>
             </div>
-            <img src="https://mgnub.github.io/CityMotion/ICONS/projectAltF4.png" alt="">
+            <img src="../ICONS/projectAltF4.png" draggable = "false" alt="">
         </footer>
     </div>
-<script src = 'https://mgnub.github.io/CityMotion/JAVASCRIPT/menu.js'></script>
-<script src = 'https://mgnub.github.io/CityMotion/JAVASCRIPT/road.js'></script>
+<script src = '../JAVASCRIPT/menu.js'></script>
+<script src = '../JAVASCRIPT/road.js'></script>
 </body>
 </html>
