@@ -161,14 +161,3 @@ function changeText(index, city) {
 
 
 console.log(continents);
-
-window.addEventListener('scroll', parallax);
-
-function btnClicked(btnState) {
-    const btn = document.querySelector('#btn button');
-    // if(btnState) {
-    //     btn.style.background = 'rgb(180, 180, 180)';
-    // } else {
-    //     style.background = 'transparent';
-    // }
-}
