@@ -22,7 +22,7 @@ body {
 }
 
 #earth {
-    background : url('/IMAGES/earth.png');
+    background : url('../IMAGES/earth.png');
     position : fixed;
     top : 50%;
     left : 50%;
@@ -50,7 +50,7 @@ body {
 
 #earth #globe {
     position : absolute;
-    background : url('/IMAGES/global.png');
+    background : url('../IMAGES/global.png');
     background-size : 80%;
     background-repeat : no-repeat;
     background-position : center;
