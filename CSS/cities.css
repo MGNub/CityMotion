@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 :root {
     --bgColor : black;
 }
 body {
     background : rgb(20, 20, 20);
     height : fit-content;
+    overflow-x : hidden;
 }
 
 /*intro animation*/
@@ -19,7 +22,7 @@ body {
 }
 
 #earth {
-    background : url('https://mgnub.github.io/CityMotion/IMAGES/earth.png');
+    background : url('/IMAGES/earth.png');
     position : fixed;
     top : 50%;
     left : 50%;
@@ -47,7 +50,7 @@ body {
 
 #earth #globe {
     position : absolute;
-    background : url('https://mgnub.github.io/CityMotion/IMAGES/global.png');
+    background : url('/IMAGES/global.png');
     background-size : 80%;
     background-repeat : no-repeat;
     background-position : center;
@@ -78,7 +81,7 @@ body {
     top : 0;
     left : 0;
     transform : scaleX(0%);
-    background : black;
+    background : #27476e;
     transition : all 1s ease-in-out;
     height : 100vh;
     width : 100vw;
@@ -88,31 +91,31 @@ body {
 }
 
 #map {
-    background : rgb(3, 9, 70);
+    background : rgba(3, 9, 70, 0);
     height : 80vh;
     width : 80vw;
 }
 
 
 svg path {
-    fill : rgb(99, 99, 185);
+    fill : rgb(118, 141, 199);
     cursor : pointer;
     stroke : white;
     stroke-width : 20px;
 }
 
 svg a:hover path {
-    fill : rgb(201, 235, 255);
+    fill : rgba(57, 67, 93, 0.692);
     transition-duration : 0.2s;
 }
 
-/*dakar*/
+/*cities*/
 
 .city {
     position : absolute;
     top : 0;
     left : 0;
-    height : 400vh;
+    height : 300vh;
     width : 100vw;
     z-index : 10;
     transform : translateX(-100vw);
@@ -121,10 +124,23 @@ svg a:hover path {
 }
 
 .city .page1 {
-    position : absolute;
-    top : 0;
-    left:  0;
+    height : 100vh;
+    width : 100vw;
+    display : flex;
+    justify-content : center;
+    align-items : center;
     background : transparent;
+    gap : 2rem;
+}
+
+.city .page1 .text{
+    display : flex;
+    flex-direction : column;
+    width : 50vw;
+    gap : 0.5rem;
+}
+
+.city .page {
     height : 100vh;
     width : 100vw;
     display : flex;
@@ -140,6 +156,19 @@ svg a:hover path {
     gap : 0.5rem;
 }
 
+.city .page .text{
+    display : flex;
+    flex-direction : column;
+    width : 50vw;
+    gap : 0.5rem;
+}
+
+
+.city .page:nth-child(2) {
+    position : sticky;
+    top : 0;
+}
+
 /* .heading {
     width : 100%;
 } */
@@ -147,6 +176,10 @@ svg a:hover path {
 .city h1 {
     font-size : 5rem;
     margin : 0;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 .city h2 {
     font-size : 1rem;
@@ -154,72 +187,219 @@ svg a:hover path {
     text-align : left;
     margin-top : 0;
     margin-right : 20px;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.city h3 {
+    font-size : 3rem;
+    margin : 0;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .city p {
     font-size : 1.8rem;
+    font-family: "Spectral", serif;
+    font-weight: 200;
+    font-style: normal;
 }
-
+.city h4 {
+    font-size : 1.5rem;
+    font-family: "Spectral", serif;
+    font-weight: 200;
+    font-style: normal;
+}
 .city img {
     width : 40vw;
 }
 
-/*amsterdam*/
+/*city content*/
 
-#amsterdam {
-    position : absolute;
-    top : 0;
-    left:  0;
-    height : 400vh;
-    width : 100vw;
-    z-index : 10;
-    transform : translateX(-100vw);
-    transition : all 1s ease-in-out;
-
-}
-
-#amsterdam .page1 {
-    position : absolute;
-    top : 0;
-    left:  0;
-    background : transparent;
-    height : 100vh;
-    width : 100vw;
+.cityInfrastructure {
     display : flex;
-    justify-content : center;
-    align-items : center;
-    gap : 2rem;
+    background : ;
+    width : 80vw;
+    height : 80vh;
+    gap : 0;
 }
 
-#amsterdam .page1 .text{
+.cityInfrastructure .cityNav {
+    background : ;
+    height : 100%;
+    flex : 2;
     display : flex;
     flex-direction : column;
-    width : 50vw;
-    gap : 2rem;
+    /* align-items : center; */
+    justify-content : center;
+    background : var(--primaryLight);
 }
 
-.heading {
-    width : fit-content;
-}
-
-#amsterdam h1 {
+.cityNav span {
+    padding : 10px 0px;
+    margin : auto 20px;
     font-size : 5rem;
+    border-bottom : solid 1px;
+    display : flex;
+    align-items : center;
+    cursor : pointer;
+    /* text-align : center; */
+}
+
+.cityNav span p {
+    width : fit-content;
     margin : 0;
-}
-#amsterdam h2 {
-    font-size : 1rem;
-    color : rgba(255, 255, 255, 0.654);
-    text-align : right;
-    margin-top : 0;
-}
-
-#amsterdam p {
     font-size : 1.8rem;
+    transition : all 0.3s ease-in-out;
+    font-weight : bold;
 }
 
-#amsterdam img {
-    width : 40vw;
+.cityNav span:hover p {
+    color : var(--primaryDark);
+    transform : translateY(-8px);
+    transition-duration : 0.5s;
+
 }
+
+.cityInfrastructure .cityContent {
+    position : relative;
+    flex : 5;
+    border-left : 2px solid white;
+    background-size : cover;
+    background-position : center;
+    background-repeat: no-repeat;
+    background-blend-mode : overlay;
+    background-color : rgba(0, 0, 0, 0.512);
+    transition : all 0.3s ease-in-out;
+}
+
+.cityBG {
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    opacity : 0;
+    transition : all 0.3s ease-in-out;
+}
+
+/* .cityBG:nth-child(1) {
+    background : green;
+}
+
+.cityBG:nth-child(2) {
+    background : red;
+}
+
+.cityBG:nth-child(3) {
+    background : yellow;
+}
+
+.cityBG:nth-child(4) {
+    background : blue;
+}
+
+.cityBG:nth-child(5) {
+    background : purple;
+}
+
+.cityBG:nth-child(6) {
+    background : orange;
+} */
+
+.city:nth-child(1) .cityContent {
+    background-image : url('https://images.foxtv.com/static.fox29.com/www.fox29.com/content/uploads/2022/05/1280/720/SEPTA-crime-hearing.jpg?ve=1&tl=1');
+    background-size : auto 100%;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+
+.city:nth-child(2) .cityContent {
+    background-image : url('https://www.visitphilly.com/wp-content/uploads/2017/12/schuylkill-river-trail-philadelphia1-900vp.jpg');
+    background-size : auto 100%;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+
+.city:nth-child(3) .cityContent {
+    background-image : url('https://www.railwayage.com/wp-content/uploads/2024/02/SEPTA-Forward_StrategicPlan2021-2026-21-1-1.jpg');
+    background-size : auto 100%;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+
+.city:nth-child(4) .cityContent {
+    background-image : url('https://cloudfront-us-east-1.images.arcpublishing.com/pmn/PK6UMUFA4BGQLJDPA2PTBDYWK4.jpg');
+    background-size : auto 100%;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+
+.city:nth-child(5) .cityContent {
+    background-image : url('https://upload.wikimedia.org/wikipedia/commons/f/f2/SEPTA_K-car_9074_on_the_13.jpg');
+    background-size : auto 100%;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+
+.city:nth-child(6) .cityContent {
+    background-image : url('https://www.visitphilly.com/wp-content/uploads/2017/12/schuylkill-river-trail-philadelphia1-900vp.jpg');
+    background-size : auto 100%;
+    background-position : center;
+    background-repeat: no-repeat;
+}
+
+
+
+.cityContent .cityText {
+    position : absolute;
+    width : 90%;
+    margin : 2rem 2rem;
+    opacity : 0;
+    transform : translateY(30%);
+    transition : opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.cityDisplay {
+    opacity : 1 !important;
+    transform : translateY(0) !important;
+}
+
+.cityText:nth-child(1) {
+    display : block;
+}
+
+.cityContent:hover {
+    background-size : auto 150%;
+}
+
+.cityContent h2 {
+    font-size : 2.5rem;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.cityContent p {
+    font-size : 2rem;
+    font-family: "Spectral", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+}
+/*footer*/
+
+footer {
+    position : absolute;
+    left : 0;
+    top : 100vh;
+    z-index : 30;
+    
+}
+
 /*animations*/
 
 @keyframes earthLoad {
