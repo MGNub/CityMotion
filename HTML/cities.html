@@ -3,16 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CityMotion</title>
-    <link rel="stylesheet" href="https://mgnub.github.io/CityMotion/CSS/menu.css">
-    <link rel="stylesheet" href="https://mgnub.github.io/CityMotion/CSS/cities.css">
-    <link rel="icon" href="https://mgnub.github.io/CityMotion/IMAGES/logo.png">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    <link rel="stylesheet" href="../CSS/cities.css">
+    <link rel="icon" href="../IMAGES/logo.png">
 </head>
 <body>
     <div id = 'menuBackground'></div>
     <div id = 'menu'>
         <div id = 'menuBar'>
-            <a id = 'title' href = 'https://mgnub.github.io/CityMotion/index.html'>
-                <img id = 'logo' src="https://mgnub.github.io/CityMotion/IMAGES/logo.png" alt="">
+            <a id = 'title' href = '../index.html'>
+                <img id = 'logo' src="../IMAGES/logo.png" alt="">
                 <div>
                     <h1 id = 'titleText'>CityMotion</h1>
                 </div>
@@ -21,7 +21,7 @@
         </div>
         <div id = 'menuBtn' class = 'reveal'>CityMotion</div>
         <div id = 'menuBtn2' class = ''>
-            <a href = 'https://mgnub.github.io/CityMotion/index.html'>Home</a>
+            <a href = '../index.html'>Home</a>
             <a href = 'road.html'>Road Infrastructure</a>
             <a href = 'commute.html'>Difficulties of Commuting</a>
             <a class = 'active'>Cities Around the World</a>
@@ -41,9 +41,53 @@
             </div>
             <img src="https://cdn.britannica.com/16/152516-050-93DB4049/Goree-Island-Senegal.jpg" alt="">
         </div>
+        <div class = 'page'>
+            <div class = 'cityInfrastructure'>
+                <div class = 'cityNav'>
+                    <span class = 'tab' onclick = "changeText(0, '#dakar')"><p>Buses</p></span>
+                    <span class = 'tab' onclick = "changeText(1, '#dakar')"><p>Minibuses</p></span>
+                    <span class = 'tab' onclick = "changeText(2, '#dakar')"><p>Taxis</p></span>
+                    <span class = 'tab' onclick = "changeText(3, '#dakar')"><p>Ferries</p></span>
+                    <span class = 'tab' onclick = "changeText(4, '#dakar')"><p>Bicycle Taxis</p></span>
+                    <span class = 'tab' onclick = "changeText(5, '#dakar')"><p>Rapid Transit System</p></span>
+                </div>
+                <div class = 'cityContent'>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityText cityDisplay'>
+                        <h2>Buses</h2>
+                        <p>Dakar has a bus system operated by Dakar Dem Dikk, the city's public transportation company. These buses serve various routes within the city and its surrounding suburbs. However, the bus network may not cover all areas comprehensively, and the service can be irregular.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Minibuses (Car Rapides)</h2>
+                        <p>Car rapides are colorful minibuses that operate on fixed routes throughout Dakar and its suburbs. They are a popular and affordable mode of transport for many residents, although they can be crowded and prone to delays due to traffic congestion.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Taxis</h2>
+                        <p>Taxis are readily available in Dakar and are a convenient option for getting around the city, especially for shorter distances or when traveling to areas not served by buses or car rapides. Taxis can be hailed on the street or booked through taxi stands.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Ferries</h2>
+                        <p>Dakar is located on the Cape Verde Peninsula, and ferries provide transportation between the city and nearby islands, such as Île de Gorée and Îles de la Madeleine. Ferries are an essential mode of transport for both residents and tourists visiting these islands.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Bicycle Taxis (Cyclomoteurs)</h2>
+                        <p>In addition to traditional taxis, bicycle taxis, known as cyclomoteurs or "Jakarta" in local parlance, are another mode of transportation in Dakar. These small vehicles can navigate through narrow streets and provide convenient transport for short trips.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Rapid Transit System (TER Dakar)</h2>
+                        <p>Dakar is working on implementing a rapid transit system called TER Dakar, which includes a modern commuter rail line connecting Dakar with its suburbs. Once fully operational, this system is expected to improve connectivity and reduce traffic congestion in the city.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id = 'tokyo' class = 'city'>
-        <div class = 'page1'>
+        <div class = 'page1 page'>
             <div class = 'text'>
                 <div id = 'heading'>
                     <h1>TOKYO</h1>
@@ -53,9 +97,53 @@
             </div>
             <img src="https://www.travelandleisure.com/thmb/VscfMXHNO6uBpaX2cuIW1q2ZtA8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/tokyo-japan-TOKYOTG0621-52012ff551dc46c4a87ac8e3151307a4.jpg" alt="">
         </div>
+        <div class = 'page'>
+            <div class = 'cityInfrastructure'>
+                <div class = 'cityNav'>
+                    <span class = 'tab' onclick = "changeText(0, '#tokyo')"><p>Trains</p></span>
+                    <span class = 'tab' onclick = "changeText(1, '#tokyo')"><p>Subways</p></span>
+                    <span class = 'tab' onclick = "changeText(2, '#tokyo')"><p>Buses</p></span>
+                    <span class = 'tab' onclick = "changeText(3, '#tokyo')"><p>Trams</p></span>
+                    <span class = 'tab' onclick = "changeText(4, '#tokyo')"><p>Ferries</p></span>
+                    <span class = 'tab' onclick = "changeText(5, '#tokyo')"><p>Condition</p></span>
+                </div>
+                <div class = 'cityContent'>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityText cityDisplay'>
+                        <h2>Trains</h2>
+                        <p>Japan is famous for its extensive and efficient train network, operated by several companies such as Japan Railways (JR) and private railway companies. High-speed Shinkansen trains connect major cities, while local and express trains serve both urban and rural areas.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Subways</h2>
+                        <p>Major cities like Tokyo, Osaka, and Kyoto have extensive subway systems that provide convenient transportation within urban areas. Subway networks are known for their cleanliness, punctuality, and ease of use.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Buses</h2>
+                        <p>In addition to trains and subways, buses are an essential mode of transportation in Japan, especially in suburban and rural areas where train access is limited. Local buses serve neighborhoods and provide connections to train stations, while highway buses offer long-distance travel between cities.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Trams</h2>
+                        <p>Some cities, such as Hiroshima and Nagasaki, have tram networks that provide transportation within city centers and surrounding areas. Trams are often used for short-distance travel and are popular among residents and tourists alike.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Ferries</h2>
+                        <p>Japan's numerous islands and coastal regions are served by ferry services, offering transportation options for both passengers and vehicles. Ferries connect mainland Japan with islands like Hokkaido, Shikoku, and Okinawa, as well as provide scenic cruises in tourist areas.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <p>Japanese trains and buses are renowned for their punctuality and safety records. Timetables are meticulously followed, and delays are rare. Safety measures, including automated platform barriers, help prevent accidents and ensure passenger well-being.</p>
+                        <p>Public transportation in Japan is known for its cleanliness and comfort. Trains and buses are well-maintained, and facilities are available at major stations and terminals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id = 'brisbane' class = 'city'>
-        <div class = 'page1'>
+        <div class = 'page1 page'>
             <div class = 'text'>
                 <div id = 'heading'>
                     <h1>BRISBANE</h1>
@@ -65,9 +153,53 @@
             </div>
             <img src="https://cdn.britannica.com/58/74858-050-13370EC5/Brisbane-Queensland-Austl.jpg" alt="">
         </div>
+        <div class = 'page'>
+            <div class = 'cityInfrastructure'>
+                <div class = 'cityNav'>
+                    <span class = 'tab' onclick = "changeText(0, '#brisbane')"><p>Trains</p></span>
+                    <span class = 'tab' onclick = "changeText(1, '#brisbane')"><p>Buses</p></span>
+                    <span class = 'tab' onclick = "changeText(2, '#brisbane')"><p>Ferries</p></span>
+                    <span class = 'tab' onclick = "changeText(3, '#brisbane')"><p>Bikeways</p></span>
+                    <span class = 'tab' onclick = "changeText(4, '#brisbane')"><p>Ticketing and Payment</p></span>
+                    <span class = 'tab' onclick = "changeText(5, '#brisbane')"><p>Accessibility</p></span>
+                </div>
+                <div class = 'cityContent'>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityText cityDisplay'>
+                        <h2>Trains</h2>
+                        <p>Brisbane's train network, operated by Queensland Rail, connects the city center with suburbs and neighboring regions. The network consists of several lines, including the Airport line, which provides direct access to Brisbane Airport. Trains are a popular mode of transportation for commuters and travelers alike.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Buses</h2>
+                        <p>Brisbane has an extensive bus network operated by Brisbane City Council and other private operators. Buses serve various routes throughout the city and its suburbs, providing convenient transportation options for residents. Bus services are frequent and cover areas not serviced by trains or ferries.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Ferries (CityCats and Ferries)</h2>
+                        <p>Brisbane's ferry network, operated by Brisbane City Council under the CityCat and CityFerry services, utilizes the Brisbane River as a transportation corridor. CityCats are high-speed catamarans, offering fast and scenic travel along the river, while CityFerries provide a more leisurely pace. Ferries connect key destinations along the river, including the central business district, South Bank, and University of Queensland.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Bikeways</h2>
+                        <p>Brisbane boasts an extensive network of bikeways and shared paths, making cycling a popular and viable mode of transportation. The city's flat terrain and favorable climate contribute to its reputation as a bike-friendly city. Cyclists can utilize dedicated bike lanes, paths, and bridges to navigate the city safely.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Ticketing and Payment</h2>
+                        <p>TransLink manages the integrated ticketing system for public transportation in Brisbane and South East Queensland. The go card is a smart card that allows passengers to travel seamlessly across buses, trains, and ferries by tapping on and off at designated readers. This system offers convenience and discounted fares for regular commuters.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Accessibility</h2>
+                        <p>Brisbane's public transportation system is designed to be accessible to all passengers, including those with disabilities or mobility challenges. Train stations, bus stops, and ferry terminals are equipped with features such as ramps, elevators, and tactile paving to assist passengers with diverse needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id = 'amsterdam' class = 'city'>
-        <div class = 'page1'>
+        <div class = 'page1 page'>
             <div class = 'text'>
                 <div id = 'heading'>
                     <h1>AMSTERDAM</h1>
@@ -77,9 +209,54 @@
             </div>
             <img src="https://www.travelandleisure.com/thmb/lI6nagO4MS8iZ0XRg0GbnbtvKW8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-amsterdam-AMSTERDAMTGGHOG0823-a2f9a769f3c44a23b08649daf25e1c8c.jpg" alt="">
         </div>
+        <div class = 'page'>
+            <div class = 'cityInfrastructure'>
+                <div class = 'cityNav'>
+                    <span class = 'tab' onclick = "changeText(0, '#amsterdam')"><p>Trams</p></span>
+                    <span class = 'tab' onclick = "changeText(1, '#amsterdam')"><p>Buses</p></span>
+                    <span class = 'tab' onclick = "changeText(2, '#amsterdam')"><p>Metro</p></span>
+                    <span class = 'tab' onclick = "changeText(3, '#amsterdam')"><p>Train</p></span>
+                    <span class = 'tab' onclick = "changeText(4, '#amsterdam')"><p>Bicycles</p></span>
+                    <span class = 'tab' onclick = "changeText(5, '#amsterdam')"><p>Ticketing</p></span>
+                </div>
+                <div class = 'cityContent'>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityText cityDisplay'>
+                        <h2>Trams</h2>
+                        <p>Amsterdam has an extensive tram network that covers most parts of the city. Trams are frequent and run from early morning until around afternoon. They are a popular mode of transport for locals and tourists alike.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Buses</h2>
+                        <p>The city also has a comprehensive bus network that complements the tram system. Buses cover areas not served by trams and extend to the outskirts of the city.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Metro</h2>
+                        <p>Amsterdam is intersected by several canals, and ferries are an integral part of the public transportation system, connecting different parts of the city across the waterways. The ferries are free of charge for pedestrians, cyclists, and mopeds.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Train</h2>
+                        <p>While not part of the local public transportation system, Amsterdam is well-connected to the rest of the Netherlands and neighboring countries by train. Amsterdam Central Station is the city’s main train station, serving both domestic and international routes.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Bicycles</h2>
+                        <p>Although not part of the formal public transportation system, bicycles are extremely popular in Amsterdam and are used by a large portion of the population for daily commuting. The city has dedicated bike lanes and infrastructure, making cycling a convenient and environmentally friendly mode of transport.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Ticketing</h2>
+                        <p>The public transportation system in Amsterdam operates on a unified ticketing system, which allows passengers to use the same ticket for trams, buses, metros, and ferries. Single journey tickets, day passes, and multi-day passes are available for purchase, as well as the OV-chipkart, a reloadable smart card for regular travelers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <div id = 'buenosAires' class = 'city'>
-        <div class = 'page1'>
+        <div class = 'page1 page'>
             <div class = 'text'>
                 <div id = 'heading'>
                     <h1>BUENOES AIRES</h1>
@@ -89,9 +266,55 @@
             </div>
             <img src="https://toposmagazine.com/wp-content/uploads/2021/10/1-Von-Deensel_Puerto_Madero_Buenos_Aires_40689219792-min-2.jpg" alt="">
         </div>
+        <div class = 'page'>
+            <div class = 'cityInfrastructure'>
+                <div class = 'cityNav'>
+                    <span class = 'tab' onclick = "changeText(0, '#buenosAires')"><p>Subway</p></span>
+                    <span class = 'tab' onclick = "changeText(1, '#buenosAires')"><p>Buses</p></span>
+                    <span class = 'tab' onclick = "changeText(2, '#buenosAires')"><p>Commuter Trains</p></span>
+                    <span class = 'tab' onclick = "changeText(3, '#buenosAires')"><p>Taxis and Ride-Sharing</p></span>
+                    <span class = 'tab' onclick = "changeText(4, '#buenosAires')"><p>Bicycle Rentals and Bike Lanes</p></span>
+                    <span class = 'tab' onclick = "changeText(5, '#buenosAires')"><p>Integrated Payment System</p></span>
+                </div>
+                <div class = 'cityContent'>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityText cityDisplay'>
+                        <h2>Subway (Subte)</h2>
+                        <p>Buenos Aires has an extensive subway system with six lines that cover much of the city. The Subte is a convenient and efficient way to travel around the urban core and is especially useful for reaching popular tourist destinations.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <div class = 'cityBG'></div>
+                        <h2>Buses (Colectivos)</h2>
+                        <p>The bus network in Buenos Aires is extensive, with hundreds of routes covering the entire city and its suburbs. Colectivos are a popular mode of transport due to their widespread coverage and frequency, although they can be crowded during peak hours.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <div class = 'cityBG'></div>
+                        <h2>Commuter Trains</h2>
+                        <p>Buenos Aires is served by several commuter train lines operated by the government-owned company Trenes Argentinos. These trains connect the city center with suburban areas and neighboring towns, providing essential transportation for commuters.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Taxis and Ride-Sharing</h2>
+                        <p>Taxis are readily available throughout Buenos Aires and offer a convenient option for getting around, especially for short distances or late-night travel. Additionally, ride-sharing services like Uber and Cabify are also available in the city.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Bicycle Rentals and Bike Lanes</h2>
+                        <p>Buenos Aires has implemented bike-sharing programs and expanded its network of bike lanes in recent years, making cycling a viable option for getting around the city. Bike rental stations are located throughout the city center and popular neighborhoods.</p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Integrated Payment System</h2>
+                        <p>The SUBE card is used for payment on all modes of public transportation in Buenos Aires, including buses, the Subte, and commuter trains. This integrated payment system allows passengers to easily transfer between different modes of transport using the same card.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id = 'philadelphia' class = 'city'>;
-        <div class = 'page1'>
+        <div class = 'page1 page'>
             <div class = 'text'>
                 <div id = 'heading'>
                     <h1>PHILADELPHIA</h1>
@@ -100,6 +323,50 @@
                 <p>Philadelphia, also known as the City of Brotherly Love, is the biggest city in the State of Pennsylvania. Iconic landmarks include the Philadelphia Museum of Art, Liberty Bell Center, and City Hall.</p>
             </div>
             <img src="https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2019-06/052263857bed4fbdec9ce5619f9795db.jpeg?h=8d751e12&itok=jVZAdT9f" alt="">
+        </div>
+        <div class = 'page'>
+            <div class = 'cityInfrastructure'>
+                <div class = 'cityNav'>
+                    <span class = 'tab' onclick = "changeText(0, '#philadelphia')"><p>SEPTA</p></span>
+                    <span class = 'tab' onclick = "changeText(1, '#philadelphia')"><p>Subway</p></span>
+                    <span class = 'tab' onclick = "changeText(2, '#philadelphia')"><p>Regional Rail</p></span>
+                    <span class = 'tab' onclick = "changeText(3, '#philadelphia')"><p>Buses</p></span>
+                    <span class = 'tab' onclick = "changeText(4, '#philadelphia')"><p>Trolleys</p></span>
+                    <span class = 'tab' onclick = "changeText(5, '#philadelphia')"><p>Cycling and Walking</p></span>
+                </div>
+                <div class = 'cityContent'>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityBG'></div>
+                    <div class = 'cityText cityDisplay'>
+                        <h2>SEPTA</h2>
+                        <p>Southeastern Pennsylvania Transportation Authority (SEPTA) is the primary agency responsible for public transportation in Philadelphia and its surrounding countries. SEPTA operates buses, trains, trolleys, and subways, providing comprehensive coverage across the region. </p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Subway</h2>
+                        <p>Philadelphia has a subway system known as the Market-Frankford Line (the “El”) and the Broad Street Line. These subway lines serve as major arteries connecting different parts of the city, including key neighborhoods, business districts, and attractions. </p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Regional Rail</h2>
+                        <p>SEPTA operates regional rail services that connect Philadelphia with its suburbs and neighboring towns in Pennsylvania, New Jersey, and Delaware. The Regional Rail system consists of multiple lines that provide convenient transportation for commuters and travelers. </p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Buses</h2>
+                        <p>SEPTA operates an extensive network of bus routes throughout Philadelphia and its suburbs. Buses serve areas not covered by the subway or trolley lines, providing essential connections to residential neighborhoods, commercial areas, and other destinations. </p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Trolleys</h2>
+                        <p>Philadelphia has several trolly lines that run primarily in West Philadelphia and adjacent neighborhoods. These trolley lines offer efficient transportation options for residents and visitors traveling within the city. </p>
+                    </div>
+                    <div class = 'cityText'>
+                        <h2>Cycling and Walking</h2>
+                        <p>In addition to public transit, Philadelphia promotes cycling and walking as alternative modes of transportation. The city has bike lanes, bike-sharing programs, and pedestrian-friendly infrastructure to encourage sustainable and active transportation options. </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -183,7 +450,20 @@
             </div>
         </div>
     </div>
-<script src = 'https://mgnub.github.io/CityMotion/JAVASCRIPT/menu.js'></script>
-<script src = 'https://mgnub.github.io/CityMotion/JAVASCRIPT/cities.js'></script>
+    <footer id = 'footer'>
+        <div id = 'container'>
+            <div id = 'overview'>
+                <h1>Reinventing Cities</h1>
+                <p>CityMotion is a website designed to advocate for, and promote advocacy for better cities in America.</p>
+            </div>
+            <div id = 'btn'>
+                <p>Learn more about how you can contribute... </p>
+                <a href = "contribute.html"><button onclick = 'btnClicked()'>Learn</button></a>
+            </div>
+        </div>
+        <img src="../ICONS/projectAltF4.png" alt="">
+    </footer>
+<script src = '../JAVASCRIPT/menu.js'></script>
+<script src = '../JAVASCRIPT/cities.js'></script>
 </body>
 </html>
