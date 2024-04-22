@@ -226,33 +226,48 @@ body {
 
 
 .card {
-    height : 300px;
-    width : 300px;
-    background : url('https://media.timeout.com/images/103935618/image.jpg');
-    background-position: center;
-    background-size: cover;
+    height : 50vh;
+    width : 50vh;
     transition : all 1s ease-in-out;
     transform-style : preserve-3d;
     backface-visibility : hidden;
-    background-blend-mode : overlay;
-    background-color : rgba(39, 71, 110, 0.713);
     display : flex;
     justify-content : center;
     align-items : center;
     text-align: center;
     padding: 2rem;
+    font-size : 2rem;
 }
 
-.card:hover {
+.cardContainer:nth-child(1) .card {
+    background : url('https://media.timeout.com/images/103935618/image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode : overlay;
+    background-color : rgba(39, 71, 110, 0.713);
+}
+
+.cardContainer:nth-child(2) .card {
+    background : url('https://media.phillyvoice.com/media/images/21820-septa-countdown-clocks-mfl-b.2e16d0ba.fill-735x490.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode : overlay;
+    background-color : rgba(39, 71, 110, 0.713);
+}
+
+
+.cardContainer:nth-child(1):hover .card {
+    transform : rotateY(-180deg);
+}
+
+.cardContainer:nth-child(2):hover .card {
     transform : rotateY(180deg);
 }
 
 .card::before {
-    content : '“They come pretty often, lots of buses. It’s annoying when there’s detours and delays though. At least there are public buses to take, even though there are delays. Sometimes they come 30+ minutes late. Actually, if you think about it, the buses just got canceled, so it wasn’t late at all. So I went at 4, the 4:10 bus got canceled, the 4:20 bus got canceled, but the 4:30 bus came on time, so technically it was right on time.”';
     position : absolute;
-    background : rgba(207, 206, 206, 0.662);
-    height : 300px;
-    width : 300px;
+    height : 50vh;
+    width : 50vh;
     z-index : -1;
     transform : rotateY(180deg);
     backface-visibility : hidden;
@@ -261,48 +276,28 @@ body {
     align-items : center;
     text-align: center;
     padding: 2rem;
-    font-size: 1.3rem;
-    color: black;
+    font-size: 2rem;
+    color: white;
 }
 
-.card1 {
-    height : 300px;
-    width : 300px;
+.cardContainer:nth-child(1) .card::before {
+    content : '“They come pretty often, lots of buses. It’s annoying when there’s detours and delays though. At least there are public buses to take, even though there are delays. Sometimes they come 30+ minutes late. Actually, if you think about it, the buses just got canceled, so it wasn’t late at all. So I went at 4, the 4:10 bus got canceled, the 4:20 bus got canceled, but the 4:30 bus came on time, so technically it was right on time.”';
+    background : url('https://media.timeout.com/images/103935618/image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode : overlay;
+    background-color : rgba(27, 57, 94, 1);
+    font-size: 1.3rem;
+}
+
+.cardContainer:nth-child(2) .card::before {
+    content : '“I hate the smell of weed on the subway. I like the fact that you can use your phone to get on trains, even though it makes it feels like Big Brother is watching my every move.”';
     background : url('https://media.phillyvoice.com/media/images/21820-septa-countdown-clocks-mfl-b.2e16d0ba.fill-735x490.jpg');
     background-position: center;
     background-size: cover;
-    transition : all 1s ease-in-out;
-    transform-style : preserve-3d;
-    backface-visibility : hidden;
     background-blend-mode : overlay;
-    background-color : rgba(39, 71, 110, 0.713);
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    text-align: center;
-    padding: 2rem;
-}
-
-.card1:hover {
-    transform : rotateY(180deg);
-}
-
-.card1::before {
-    content : '“I hate the smell of weed on the subway. I like the fact that you can use your phone to get on trains, even though it makes it feels like Big Brother is watching my every move.”';
-    position : absolute;
-    background : rgba(207, 206, 206, 0.662);
-    height : 300px;
-    width : 300px;
-    z-index : -1;
-    transform : rotateY(180deg);
-    backface-visibility : hidden;
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    text-align: center;
-    padding: 2rem;
+    background-color : rgba(27, 57, 94, 1);
     font-size: 1.3rem;
-    color: black;
 }
 
 /* 
@@ -438,8 +433,8 @@ body {
     /* font-family : Arial, Helvetica, sans-serif; */
     font-size : 18rem;
     /* font-weight : bold; */
-    text-shadow : 40px 0px rgb(35, 52, 83);
-    font-family: "Josefin Sans", sans-serif;
+    text-shadow : 32px 0px rgb(35, 52, 83);
+    font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
@@ -515,7 +510,7 @@ body {
     background : rgb(0, 0, 0, 0.3);
     z-index : -1;
     rotate : 45deg;
-    box-shadow : -720px 200px rgb(0, 0, 0, 0.3), -480px 200px rgb(0, 0, 0, 0.3), -240px 0px rgb(0, 0, 0, 0.3), 240px -100px rgb(0, 0, 0, 0.3), 480px -100px rgb(0, 0, 0, 0.3), 720px -400px rgb(0, 0, 0, 0.3), 960px -800px rgb(0, 0, 0, 0.3);
+    box-shadow : -720px 240px rgb(0, 0, 0, 0.3), -480px 240px rgb(0, 0, 0, 0.3), -240px 240px rgb(0, 0, 0, 0.3), 240px -100px rgb(0, 0, 0, 0.3), 480px -100px rgb(0, 0, 0, 0.3), 720px -400px rgb(0, 0, 0, 0.3), 960px -800px rgb(0, 0, 0, 0.3);
 }
 
 /*scroll progress*/
@@ -551,6 +546,7 @@ body {
     background : rgb(218, 218, 218);
     transition : all 0.3s ease-in-out;
     cursor : pointer;
+    
 }
 
 /*page4*/
@@ -560,7 +556,8 @@ body {
     height : 110vh;
     width : 100vw;
     display : flex;
-    align-items : center
+    align-items : center;
+    z-index : 5;
 }
     
 #page4 h1 {
@@ -570,7 +567,7 @@ body {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
-    font-style: italic;   
+    font-style: italic;
 }
 
 /* 
