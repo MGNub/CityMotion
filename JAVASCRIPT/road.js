@@ -65,7 +65,6 @@ function parallax() {
         pageOneText.style.top = -0.33 * window.pageYOffset + pageHeight / 2;
         pageOneText.style.opacity = 1 - window.pageYOffset / 500;
 
-        // pages.style.top = -1 * window.pageYOffset;
         if (window.scrollY > pageHeight * 14.4) {
             imageText.style.marginLeft = pageHeight * -3.7 + window.innerWidth / 2;
         } else if (window.scrollY > pageHeight * 10.7) {
@@ -113,9 +112,6 @@ function parallax() {
             roadLine.style.width = -pageHeight / 3 + window.pageYOffset / 4.5;
             streetLine.style.width = -pageHeight - 100 + window.pageYOffset / 4.5;
         }
-        // if (window.pageYOffset > pageHeight * 1.75) {
-        //     document.getElementById('pageText3').classList.add('show');
-        // }
 
         /*parallaxText*/
         const parallaxTexts = document.getElementsByClassName('parallaxText');
@@ -123,7 +119,7 @@ function parallax() {
         const page6 = document.getElementById('page6');
 
         if (window.scrollY > pageHeight * 14.4) {
-            page6.style.background = 'var(--primaryDark)';
+            page6.style.background = 'var(--primary)';
         } else {
             page6.style.background = 'black';
         }
@@ -133,10 +129,23 @@ function parallax() {
         parallaxTexts[2].style.top = (pageHeight * 17.3 - window.pageYOffset) / 2;
         parallaxTexts[3].style.top = (pageHeight * 17.6 - window.pageYOffset) / 0.5; 
 
-        // parallaxShapes[0].style.top = (pageHeight * 18 - window.pageYOffset) / 2
-        // parallaxShapes[1].style.top = (pageHeight * 17.5 - window.pageYOffset) / 3;
+        /*highways*/
+        const imgContainers = document.getElementsByClassName('imgContainer');
+        const highwayTexts = document.querySelectorAll('#page8 .text');
 
+        imgContainers[0].style.transform = 'rotateX(3deg) scale(calc(100% + ' + (pageHeight / 30 * 18.7 - window.pageYOffset / 30) + '%))';
 
+        if (window.scrollY > pageHeight * 22.4) {
+            imgContainers[1].style.width = 'calc(100% + ' + (pageHeight / 10 * 21.7 - pageHeight * 22.4 / 10) + '%)';
+        } else if (window.scrollY > pageHeight * 21.7) {
+            imgContainers[1].style.width = 'calc(100% + ' + (pageHeight / 10 * 21.7 - window.pageYOffset / 10) + '%)';
+        } else if (window.scrollY > pageHeight * 18.5) {
+            highwayTexts[0].classList.add('show');
+            highwayTexts[1].classList.add('show');
+        } else {
+            highwayTexts[0].classList.remove('show');
+            highwayTexts[1].classList.remove('show');
+        }
 }
 
 window.addEventListener('scroll', parallax);
