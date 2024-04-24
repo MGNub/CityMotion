@@ -8,8 +8,11 @@ html {
     font-size : 16px;
     --primaryDark : rgb(39, 71, 110);
     --primaryLight : rgb(110, 160, 210);
-    --accent : ;
-    
+    --background : #00021f;
+    --primary : #26466D;
+    --secondary : #557ce7;
+    --accent : #abff45;
+    --font : rgb(255, 251, 193);
 }
 
 ::-webkit-scrollbar {
