@@ -2,13 +2,12 @@
 
 body {
     height : fit-content;
-    background : var(--primaryDark);
+    background : var(--background);
     /* overflow-y : hidden; */
     overflow-x : hidden;
     display : flex;
     flex-direction : column;
 }
-
 
 #intro {
     overflow : hidden;
@@ -84,6 +83,7 @@ body {
 
 #page1 {
     display : flex;
+    background : var(--primary);
     align-items : center;
 }
 
@@ -119,6 +119,7 @@ body {
 
 #page2 {
     height : 400vh;
+    background : linear-gradient(to bottom, var(--primary), var(--background));
 }
 
 #page2Stick {
@@ -142,7 +143,7 @@ body {
     background : url('https://hips.hearstapps.com/hmg-prod/images/route-101-california-getty-images-1585667994.jpg');
     background-size : 150%;
     background-position-x : 50%;
-    box-shadow : 0 0 10px 10px var(--primaryDark) inset;
+    box-shadow : 0 0 10px 5px var(--primary) inset;
     border-radius : 100px;
 }
 
@@ -161,6 +162,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    color : var(--font);
 }
 
 #page2 #roadLine {
@@ -176,6 +178,7 @@ body {
 /*page3*/ 
 #page3 {
     height : 400vh;
+    background : linear-gradient(to bottom, var(--background), var(--secondary) 80%);
 }
 #page3Stick {
     position : sticky;
@@ -194,7 +197,7 @@ body {
     position : absolute;
     height : 35vw;
     width : 35vw;
-    box-shadow : 0 0 10px 10px var(--primaryDark) inset;
+    box-shadow : 0 0 10px 10px var(--secondary) inset;
     border-radius : 100px;
     transform : translateY(-35vw);
 }
@@ -203,7 +206,7 @@ body {
     height : 35vw;
     width : 35vw;
     object-fit : cover;
-    box-shadow : 0 0 10px 10px var(--primaryDark) inset;
+    box-shadow : 0 0 10px 10px var(--secondary) inset;
     border-radius : 100px;
     z-index : -10;
 }
@@ -219,6 +222,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    color : var(--font);
 }
 
 #page3 #streetP {
@@ -238,7 +242,7 @@ body {
 /*page4*/
 #page4 {
     position : relative;
-    background : var(--primaryLight);
+    background : linear-gradient(to bottom, var(--background) 30%, var(--secondary));
     display : flex;
     align-items : center;
     justify-content : center;
@@ -301,7 +305,7 @@ body {
 
 .card .cardText {
     transform : translateY(100%);
-    background : var(--primaryDark);
+    background : var(--secondary);
     height : 80%;
     width : 100%;
     padding : 15%;
@@ -334,7 +338,7 @@ body {
     position : absolute;
     top : 0;
     border-radius : 100% 50%;
-    background : var(--primaryDark);
+    background : var(--secondary);
     width : 55%;
     height : 80%;
     transform : translate(-2%, -55%);
@@ -346,8 +350,8 @@ body {
     position : absolute;
     top : 0;
     border-radius : 100% 100%;
-    background : var(--primaryLight);
-    width : 50%;
+    background : var(--background);
+    width : 53%;
     height : 80%;
     transform : translate(50vw, -31%);
 }
@@ -355,7 +359,7 @@ body {
 #fadeLines {
     width : 100vw;
     height : 20vh;
-    background : linear-gradient(to bottom, var(--primaryLight), black);
+    background : linear-gradient(to bottom, var(--secondary), black);
 }
 
 /*page5*/
@@ -413,7 +417,7 @@ body {
 
 #page6 {
     position : relative;
-    height : 200vh;
+    height : 180vh;
     background : black;
     transition : all 0.5s ease-in-out;
     text-shadow : 3px 3px 2px black;
@@ -465,7 +469,7 @@ body {
     top : 70vh;
     width : 40vw;
     margin-left : 7vw;
-    background : var(--primaryLight);
+    background : var(--secondary);
     box-shadow : 10px 10px 5px black;
     z-index : 5;
     padding : 1rem;
@@ -484,7 +488,7 @@ body {
     display : flex;
     position : fixed;
     flex-direction : row-reverse;
-    top : 130vh;
+    top : 110vh;
     right : 5vw;
     width : 50vw;
     gap : 2rem;
@@ -522,8 +526,9 @@ body {
 #page6 .parallaxText:nth-child(4) p {
     width : 50%;
     margin-left : -10vw;
-    background : linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    background : linear-gradient(to right, var(--secondary), var(--primary));
     padding : 20px;
+    box-shadow : 10px 10px 10px black;
 }
 
 .parallaxShape {
@@ -553,17 +558,183 @@ body {
 /*page7*/
 
 #page7 {
-    height : 100vh;
+    position : relative;
+    height : 150vh;
     background : rgb(48, 172, 48);
     z-index : 1;
+    overflow : hidden;
 }
 
 #page7 #greenFade {
-    position : absolute;
+    position : relative;
     width : 100vw;
-    height : 130vh;
-    background : linear-gradient(to bottom, var(--primaryDark), transparent);
+    height : 200vh;
+    background : linear-gradient(to bottom, var(--primary), transparent);
     z-index : -1;
+}
+
+#page7::before {
+    content : '';
+    position : absolute;
+    bottom : 0;
+    width : 100vw;
+    height : 30vh;
+    background : linear-gradient(to bottom, transparent, var(--background) 70%);
+    z-index : 100;
+}
+
+/*page8*/
+
+#page8 {
+    height : 250vh;
+    position : relative;
+    background : var(--background);
+    perspective : 1000px;
+}
+
+#page8 .imgContainer {
+    height : 300vh;
+    position : absolute;
+    left : 0;
+}
+
+.imgContainer .highwayBG {
+    position : sticky;
+    top : 0;
+    width : 100vw;
+    height : 120vh;
+    background : url('https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/N36PRHDISJ5HCAWAJB5ZFBIU6U.jpg&w=1200');
+    background-size : 100%;
+    background-color : rgba(0, 0, 0, 0.5);
+    background-blend-mode : overlay;
+    background-repeat : no-repeat;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    text-shadow : 0 0 5px black;
+}
+
+#page8 .text {
+    width : 80%;
+    opacity : 0;
+    transition : all 0.3s ease-in-out;
+    transform : translateY(20px);
+}
+
+#page8 .text:nth-child(2) {
+    transition-delay : 0.1s;
+}
+
+#page8 .text h2 {
+    font-size : 3rem;
+    color : var(--font);
+}
+
+#page8 .text p {
+    font-size : 2rem;
+}
+
+#page8 .text8 {
+    position : absolute;
+    top : 100vh;
+    left : 50vw;
+    transform : translateX(-50%);
+    font-size : 2rem;
+    text-align : center;
+    z-index : 1;
+    height : 50vh;
+}
+
+#page8 p {
+    /* position : sticky;
+    top : 60vh; */
+}
+
+/* #page8 .quote {
+    position : fixed;
+    left : 50vw;
+    translate : -50%;
+    top : 250vh;
+
+    color : red;
+    font-size : 5rem;
+    transform : translateY(-20px);
+    opacity : 0;
+    transition : all 0.3s ease-in-out;
+    transition-delay : 0.2s;
+}
+.quote p {
+    position : sticky;
+    top : 80vh;
+} */
+
+/*page9*/
+
+#page9 {
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+#page9 .text {
+    width : 70%;
+    font-size : 2rem;
+    text-align : center;
+    display : flex;
+    flex-direction : column;
+    gap : 6rem;
+    translate : 0 -20vh;
+}
+
+#page9 .text p {
+    opacity : 0;
+    transform : translateY(50%);
+    transition : all 0.5s ease-in-out;
+}
+/*page10*/
+#page10 {
+    height : 300vh;
+    position : relative;
+    background : var(--background);
+    padding-bottom : 30vh;
+}
+
+#page10 .imgContainer {
+    position : sticky;
+    top : 20vh;
+    left : 3rem;
+}
+
+#page10 img {
+    width : 100%;
+}
+
+#page10 .imgContainer p {
+    font-size : 1.2rem;
+    color : rgb(197, 197, 197);
+}
+
+#page10 .text {
+    position : absolute;
+    top : 100vh;
+    width : 40vw;
+    left : 60vw;
+    z-index : 5;
+}
+
+#page10 .text:nth-child(2) {
+    top : 200vh;
+}
+
+#page10 .text h2 {
+    font-size : 2.8rem;
+    font-weight : bold;
+    color : var(--font);
+}
+
+#page10 .text p {
+    font-size : 2rem;
 }
 
 /*animations*/
